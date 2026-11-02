@@ -67,13 +67,17 @@ nav.main a:hover::after,nav.main a.on::after{width:100%}
 .hero h1 em svg{position:absolute;left:0;bottom:-.18em;width:100%;height:.3em;overflow:visible}
 .hero p.lead{font-size:1.15rem;color:var(--muted);max-width:30rem}
 .hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-.hero-art{position:relative;min-height:540px}
-.hero-photo{position:absolute;inset:0 -60px 0 0;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%,0 22%);}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:30% 50%}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(232,32,136,.22),transparent 45%)}
-.hero-circle{position:absolute;left:-48px;bottom:-30px;width:210px;height:210px;border-radius:50%;border:8px solid var(--cream);overflow:hidden;box-shadow:0 18px 40px rgba(42,10,33,.25)}
-.hero-circle img{width:100%;height:100%;object-fit:cover}
-.swirl{position:absolute;right:-70px;top:-70px;width:250px;height:250px;color:var(--pink);opacity:.95;animation:spin 40s linear infinite;z-index:2}
+.hero-art{position:relative;min-height:560px}
+
+.sun{position:absolute;right:-6%;top:6%;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff6fb5,var(--pink) 55%,var(--pink-d));opacity:.9}
+.streaks{position:absolute;inset:0;display:flex;gap:14px;align-items:stretch;padding:0 0 0 4%}
+.st{position:relative;flex:1;overflow:hidden;transform:skewX(-9deg);box-shadow:0 22px 44px rgba(42,10,33,.28);border:6px solid var(--cream);background:#fff}
+.st img{position:absolute;top:0;width:140%;max-width:none;height:100%;left:-20%;object-fit:cover;transform:skewX(9deg)}
+.st figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.2rem .9rem .8rem 1.4rem;background:linear-gradient(transparent,rgba(42,10,33,.85));color:#fff;font:italic 500 1.05rem/1.2 var(--serif);transform:skewX(9deg)}
+.s1{margin-top:12%;margin-bottom:0}
+.s2{flex:1.45;margin-top:0;margin-bottom:10%}
+.s3{margin-top:22%;margin-bottom:-2%}
+.swirl{position:absolute;left:-30px;top:-46px;width:150px;height:150px;color:var(--pink);opacity:.95;animation:spin 40s linear infinite;z-index:2}
 @keyframes spin{to{transform:rotate(360deg)}}
 .bub{position:absolute;border-radius:50%;border:2px solid #fff;background:radial-gradient(circle at 30% 30%,#fff,rgba(255,255,255,.15));box-shadow:0 0 0 1px rgba(232,32,136,.18);z-index:3;animation:float 7s ease-in-out infinite}
 .b1{width:34px;height:34px;left:8%;top:12%}
@@ -214,10 +218,9 @@ footer a:hover{color:#fff;text-decoration:underline}
   header.site .btn{display:none}
   .hero .wrap,.about .wrap,.reviews .wrap,.contact .wrap{grid-template-columns:1fr}
   .hero{padding-bottom:7rem}
-  .hero-art{min-height:380px;margin-top:1rem}
-  .hero-photo{inset:0}
-  .hero-circle{left:-8px;width:150px;height:150px}
-  .swirl{width:170px;height:170px;right:-40px;top:-50px}
+  .hero-art{min-height:400px;margin-top:1rem}
+  .st figcaption{font-size:.85rem;padding:1.4rem .5rem .6rem .9rem}
+      .swirl{width:100px;height:100px;left:-10px;top:-30px}
   .picker-card{grid-template-columns:1fr;gap:1.1rem}
   .picker-card h2{max-width:none}
   .picker-call{border-left:0;padding-left:0;border-top:2px dashed #f0c3d8;padding-top:1.1rem}
@@ -287,8 +290,12 @@ footer a:hover{color:#fff;text-decoration:underline}
       </div>
     </div>
     <div class="hero-art rv">
-      <div class="hero-photo"><img src="images/banner_bg.jpg" alt="Spotless kitchen with granite island cleaned by MTS Cleaning Services"></div>
-      <div class="hero-circle"><img src="images/welcome_img.jpg" alt="Freshly cleaned bedroom"></div>
+      <div class="sun" aria-hidden="true"></div>
+      <div class="streaks">
+        <figure class="st s1"><img src="images/welcome_img.jpg" alt="Freshly cleaned bedroom"><figcaption>Bedroom</figcaption></figure>
+        <figure class="st s2"><img src="images/banner_bg.jpg" alt="Spotless kitchen with granite island"><figcaption>Kitchen</figcaption></figure>
+        <figure class="st s3"><img src="images/services_caption_img.jpg" alt="Bright living room with clean carpet"><figcaption>Living room</figcaption></figure>
+      </div>
       <svg class="swirl" viewBox="-100 -100 200 200" aria-hidden="true">
         <defs><path id="blade" d="M0 0C8-18 38-42 82-30C52-30 26-14 0 0Z"/></defs>
         <g fill="currentColor">
