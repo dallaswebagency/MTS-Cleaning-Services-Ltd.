@@ -47,9 +47,9 @@ a{color:inherit;text-decoration:none}
 .topbar .group{display:flex;gap:1.6rem;flex-wrap:wrap}
 
 /* header */
-header.site{position:sticky;top:0;z-index:50;background:rgba(255,246,250,.94);backdrop-filter:blur(10px);border-bottom:1px solid #f3cfe1}
+header.site{position:sticky;top:0;z-index:50;background:#fff;backdrop-filter:blur(10px);border-bottom:1px solid #f3cfe1}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:.4rem 0}
-.brand img{height:64px;width:auto}
+.brand img{height:68px;width:auto}
 nav.main{display:flex;gap:2rem;font-weight:600;font-size:.95rem}
 nav.main a{position:relative;padding:.4rem 0}
 nav.main a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--pink);transition:width .25s}
@@ -152,7 +152,7 @@ nav.main a:hover::after,nav.main a.on::after{width:100%}
 .shot figcaption span{font:italic 500 1rem var(--serif);color:var(--pink-d)}
 
 /* reviews */
-.reviews{position:relative;color:#fff;padding:7rem 0;background:linear-gradient(100deg,rgba(42,10,33,.94) 35%,rgba(198,15,110,.78)),url(images/reviews_bg.jpg) center/cover}
+.reviews{position:relative;color:#fff;padding:7rem 0;background:linear-gradient(100deg,rgba(42,10,33,.94) 35%,rgba(198,15,110,.78)),url(images/hero-kitchen.jpg) center/cover}
 .reviews .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
 .reviews .eyebrow{color:#ffb3d8}
 .reviews h2{font:700 clamp(2.2rem,4.5vw,3.8rem)/1.05 var(--serif);margin:1rem 0 1.6rem}
@@ -292,9 +292,9 @@ footer a:hover{color:#fff;text-decoration:underline}
     <div class="hero-art rv">
       <div class="sun" aria-hidden="true"></div>
       <div class="streaks">
-        <figure class="st s1"><img src="images/welcome_img.jpg" alt="Freshly cleaned bedroom"><figcaption>Bedroom</figcaption></figure>
-        <figure class="st s2"><img src="images/banner_bg.jpg" alt="Spotless kitchen with granite island"><figcaption>Kitchen</figcaption></figure>
-        <figure class="st s3"><img src="images/services_caption_img.jpg" alt="Bright living room with clean carpet"><figcaption>Living room</figcaption></figure>
+        <figure class="st s1"><img src="images/bedroom.jpg" alt="Freshly cleaned bedroom"><figcaption>Bedroom</figcaption></figure>
+        <figure class="st s2"><img src="images/hero-kitchen.jpg" alt="Spotless kitchen with granite island"><figcaption>Kitchen</figcaption></figure>
+        <figure class="st s3"><img src="images/residential.jpg" alt="Clean living room with stone fireplace"><figcaption>Living room</figcaption></figure>
       </div>
       <svg class="swirl" viewBox="-100 -100 200 200" aria-hidden="true">
         <defs><path id="blade" d="M0 0C8-18 38-42 82-30C52-30 26-14 0 0Z"/></defs>
@@ -335,7 +335,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 <section class="about">
   <div class="wrap">
     <div class="about-media rv">
-      <img src="images/welcome_img.jpg" alt="Bright, freshly cleaned master bedroom" loading="lazy">
+      <img src="images/condo.jpg" alt="Bright, freshly cleaned kitchen and living area" loading="lazy">
       <div class="stamp">Spend your time on what you love.</div>
     </div>
     <div class="rv">
@@ -362,25 +362,25 @@ footer a:hover{color:#fff;text-decoration:underline}
       <a class="row rv" href="#contact" data-svc="Commercial Cleaning">
         <span class="n">01</span>
         <div><h3>Commercial Cleaning</h3><p>Offices, hallways and shared spaces cleaned to a spotless finish, so your building always makes a good first impression.</p></div>
-        <div class="ph"><img src="images/service_img1.jpg" alt="Clean commercial hallway" loading="lazy"></div>
+        <div class="ph"><img src="images/commercial.jpg" alt="Clean office corridor with glass doors" loading="lazy"></div>
         <span class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="row rv" href="#contact" data-svc="Residential Cleaning">
         <span class="n">02</span>
         <div><h3>Residential Cleaning</h3><p>Regular or one-off home cleaning, from living areas to kitchens and bathrooms, so you come home to a sparkling clean space.</p></div>
-        <div class="ph"><img src="images/service_img2.jpg" alt="Tidy living room with fireplace" loading="lazy"></div>
+        <div class="ph"><img src="images/residential.jpg" alt="Tidy living room with stone fireplace" loading="lazy"></div>
         <span class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="row rv" href="#contact" data-svc="Move In / Out">
         <span class="n">03</span>
         <div><h3>Move In / Out</h3><p>Floors, corners, baseboards and fixtures cleaned top to bottom, so an empty place is ready for whoever comes next.</p></div>
-        <div class="ph"><img src="images/service_img3.jpg" alt="Clean tile floor in an empty room" loading="lazy"></div>
+        <div class="ph"><img src="images/moveout.jpg" alt="Empty condo with glossy clean floor" loading="lazy"></div>
         <span class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="row rv" href="#contact" data-svc="Carpet Cleaning">
         <span class="n">04</span>
         <div><h3>Carpet Cleaning</h3><p>Tired, trampled carpet brought back to fresh and soft underfoot, in homes and in commercial spaces.</p></div>
-        <div class="ph"><img src="images/service_img4.jpg" alt="Freshly cleaned carpet under a coffee table" loading="lazy"></div>
+        <div class="ph"><img src="images/carpet.jpg" alt="Freshly vacuumed carpet" loading="lazy"></div>
         <span class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
     </div>
